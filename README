@@ -1,3 +1,19 @@
+### For Mac
+
+brew install libtool automake pkg-config libusb hidapi
+git clone https://github.com/chcbaram/openocd-wch-link
+
+cd openocd-wch-link
+./bootstrap
+./configure --disable-werror MAKEINFO=true \
+   CAPSTONE_CFLAGS="-I/opt/homebrew/Cellar/capstone/4.0.2/include/capstone -I/opt/homebrew/include"
+
+make
+
+
+
+
+
 Welcome to OpenOCD!
 ===================
 
